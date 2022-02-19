@@ -1,0 +1,20 @@
+my:
+  greeting: This is greeting
+  list:
+    value: one, two , Five, Six, Seven
+db:
+  connection: my postgreSQL
+  port: 8881
+  
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:1234/postgres
+    username: postgres
+    password: 1234
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect

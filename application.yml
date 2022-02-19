@@ -1,7 +1,7 @@
 my:
   greeting: This is greeting
   list:
-    value: one, two , Five, Six, Seven
+    value: one, two , Five, Six, Seven, Eight
 db:
   connection: my postgreSQL
   port: 8881

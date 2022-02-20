@@ -8,7 +8,7 @@ db:
   
 spring:
   datasource:
-    url: jdbc:postgresql://host.docker.internal:1234/postgres
+    url: jdbc:postgresql://localhost:1234/postgres
     username: postgres
     password: 1234
   jpa:
@@ -18,6 +18,12 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+  cloud:
+    config:
+      fail-fast: true
+      retry:
+        maxAttempts: 200
+        maxInterval: 10000 
 
 eureka:
   client:

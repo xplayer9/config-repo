@@ -24,7 +24,6 @@ eureka:
     hostname: localhost
     preferIpAddress: false
 
-#Actuator
 management:
   endpoints:
     jmx:

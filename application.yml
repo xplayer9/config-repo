@@ -25,5 +25,7 @@ eureka:
     preferIpAddress: false
 
 management:
-  security:
-    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: info

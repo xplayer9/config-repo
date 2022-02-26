@@ -25,7 +25,5 @@ eureka:
     preferIpAddress: false
 
 management:
-  endpoints:
-    jmx:
-      exposure:
-        include:health,info,env,beans,mappings
+  security:
+    enabled: false

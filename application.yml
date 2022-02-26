@@ -5,9 +5,9 @@ my:
   
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgres
+    url: jdbc:postgresql://localhost:1234/postgres
     username: postgres
-    password: password
+    password: 1234
   jpa:
     show-sql: true
     hibernate:

@@ -30,6 +30,3 @@ management:
     jmx:
       exposure:
         include:health,info,env,beans,mappings
-    web:
-      exposure:
-        include:health,info,env,beans,mappings

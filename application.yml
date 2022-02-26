@@ -25,5 +25,11 @@ eureka:
     preferIpAddress: false
 
 #Actuator
-management:endpoints:jmx:exposure:include:health,info,env,beans,mappings
-management:endpoints:web.exposure:include:health,info,env,beans,mappings
+management:
+  endpoints:
+    jmx:
+      exposure:
+        include:health,info,env,beans,mappings
+    web:
+      exposure:
+        include:health,info,env,beans,mappings

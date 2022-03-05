@@ -1,6 +1,6 @@
 my:
   greeting: This is greeting
-  cookieName: cookie JWT
+  cookieName: cookieJWT
   secretKey: mysecrect
   keyDuration: 3600
   Header:

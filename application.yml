@@ -3,8 +3,8 @@ my:
   cookieName: cookieJWT
   secretKey: mysecrect
   keyDuration: 3600
-  Header:
-    Type: Authorization
+  header:
+    type: Authorization
   list:
     value: one, two , Five, Six, Seven, Eight
   

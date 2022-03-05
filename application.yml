@@ -1,7 +1,7 @@
 my:
   greeting: This is greeting
   cookieName: cookie JWT
-  secretKey: sss
+  secretKey: mysecrect
   keyDuration: 3600
   Header:
     Type: Authorization

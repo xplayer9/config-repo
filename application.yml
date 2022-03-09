@@ -45,5 +45,5 @@ resilience4j.circuitbreaker:
       permittedNumberOfCallsInHalfOpenState: 3
       slidingWindowType: TIME_BASED
       minimumNumberOfCalls: 20
-      waitDurationInOpenState: 3s
+      waitDurationInOpenState: 3
       failureRateThreshold: 50

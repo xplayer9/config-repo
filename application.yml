@@ -38,12 +38,8 @@ management:
     health:
       show-details: always
 
-resilience4j.circuitbreaker:
+resilience4j.timelimiter:
   instances:
-    processService:
-      slidingWindowSize: 50
-      permittedNumberOfCallsInHalfOpenState: 3
-      slidingWindowType: TIME_BASED
-      minimumNumberOfCalls: 20
-      waitDurationInOpenState: 3
-      failureRateThreshold: 50
+    getMessageTL:
+      cancel-running-future: true
+      timeout-duration: 1s

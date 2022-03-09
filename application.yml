@@ -41,12 +41,9 @@ management:
 resilience4j.circuitbreaker:
   instances:
     processService:
-      registerHealthIndicator: true
-      slidingWindowSize: 100
-
-resilience4j.timelimiter:
-  instances:
-    processService:
-      timeoutDuration: 2s
-      cancelRunningFuture: true
-
+      slidingWindowSize: 50
+      permittedNumberOfCallsInHalfOpenState: 3
+      slidingWindowType: TIME_BASED
+      minimumNumberOfCalls: 20
+      waitDurationInOpenState: 3s
+      failureRateThreshold: 50

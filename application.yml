@@ -40,6 +40,6 @@ management:
 
 resilience4j.timelimiter:
   instances:
-    getMessageTL:
+    processService:
       cancel-running-future: true
       timeout-duration: 1s

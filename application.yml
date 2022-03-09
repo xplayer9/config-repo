@@ -38,9 +38,16 @@ management:
     health:
       show-details: always
 
-resilience4j.timelimiter:
+resilience4j.circuitbreaker:
   instances:
     processService:
-      cancel-running-future: true
-      timeout-duration: 1s
+      slidingWindowSize: 5
+      permittedNumberOfCallsInHalfOpenState: 1
+      slidingWindowType: COUNT_BASED
+      minimumNumberOfCalls: 10
+      waitDurationInOpenState: 3s
+      slowCallDurationThreshold: 2s
+      failureRateThreshold: 10
+      slowCallRateThreshold: 10
+
 

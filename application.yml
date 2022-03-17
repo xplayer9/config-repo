@@ -7,7 +7,9 @@ my:
     type: Authorization
   list:
     value: one, two , Five, Six, Seven, Eight
-  
+  apiKey: d1f8636b9df280532258cc61137e6f24
+  uri: https://financialmodelingprep.com/api/v3/historical-price-full/
+
 spring:
   datasource:
     url: jdbc:postgresql://localhost:1234/postgres

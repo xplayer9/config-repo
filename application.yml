@@ -9,7 +9,8 @@ my:
     value: one, two , Five, Six, Seven, Eight
   apiKey: d1f8636b9df280532258cc61137e6f24
   uri: https://financialmodelingprep.com/api/v3/historical-price-full/
-  topic-json: json_topic
+  kafkatopic: json_topic
+  kafkauri: localhost:9092
 
 spring:
   datasource:
